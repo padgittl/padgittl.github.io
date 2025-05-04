@@ -37,6 +37,17 @@
     </script>
     <!--end of Navigation bar-->
 
+    <div id="navbar"></div>
+
+    <script>
+      fetch("navbar.html")
+    .then(response => response.text())
+    .then(data => {
+	document.getElementById("navbar").innerHTML = data;
+    });
+    </script>
+
+    
     <br><br>
     <div class="container">
         <div class="my-stuff">
