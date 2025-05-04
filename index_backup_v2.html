@@ -16,12 +16,29 @@
     
     <!-- Le styles -->
     <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <style type="text/css">
+      body {
+        padding-top: 60px;
+        padding-bottom: 40px;
+      }
+    </style>
 
   </head>
   <body>
       
+    <!--Navigation bar-->
+    <div id="nav-placeholder-header">
+    </div>
+    
+    <script>
+      $(function(){
+      $("#nav-placeholder-header").load("navbar.html");
+      });
+    </script>
+    <!--end of Navigation bar-->
 
     <div id="navbar"></div>
+
     <script>
       fetch("navbar.html")
     .then(response => response.text())
